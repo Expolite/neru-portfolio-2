@@ -1,0 +1,680 @@
+/* link fonts */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* Default font use (optional) */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Fonts */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/static/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: "ShareTechMono";
+    src: url("fonts/ShareTechMono/ShareTechMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: "UbuntuMono";
+    src: url("fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: "BrunoAceSC";
+    src: url("fonts/Bruno-Ace_SC/BrunoAceSC-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    src: url("fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url("fonts/Kanit/Kanit-Light.ttf");
+}
+
+@font-face {
+    font-family: "KanitExtraLight";
+    src: url("fonts/Kanit/Kanit-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "KanitMedium";
+    src: url("fonts/Kanit/Kanit-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Prompt";
+    src: url("fonts/Prompt/Prompt-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "PromptSemiBold";
+    src: url("fonts/Prompt/Prompt-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Rajdhani";
+    src: url("fonts/Rajdhani/Rajdhani-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: url("fonts/Caveat/Caveat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("fonts/Orbitron/static/Orbitron-SemiBold.ttf");
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+    color: white;
+    background-color: #141414;
+}
+
+
+
+
+
+nav {
+    color: white;
+    background-color: #141414;
+    transition: all .5s ease;
+}
+.navbar_contents a {
+    text-decoration: none;
+    color: white;
+    transition: all 1s ease;
+}
+
+.navbar_contents a:hover {
+    color: #38d1ef;   
+}
+
+.activeColor {
+    text-decoration: underline !important;
+    color: #38d1ef !important;
+}
+
+.inactiveColor {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+
+
+/* this used to change Color-Bg on Scroll */
+.ChangeBgNavOnScroll {
+    color: black;
+/*    background-color: #20778b;*/
+    background-color: #123b5a;
+}
+
+
+
+
+
+/* Home Left */
+
+.home_left {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    margin-left: 50px;
+    transition: all .3s ease;
+}
+.home_left h1 {
+    font-size: 60px;
+    font-family: "Orbitron";
+    transition: all .3s ease;
+    color: #38d1ef;
+}
+.home_left p {
+/*    font-family: "Montserrat";*/
+    font-family: "Kanit";
+    word-spacing: 5px;
+    font-size: 18px;
+}
+
+/* About me - animation arrow right */
+.aboutMe {
+    color: #38d1ef;
+    margin-top: 30px;
+    display: block;
+}
+.aboutMe:hover {
+    color: #38d1ef;
+    text-decoration: none;
+}
+
+#aboutMe_arrowAnimation {
+    width: 100px;
+    height: 100px;
+    color: white;
+    position: relative;
+    left: 0;
+    animation-name: moverArrowBacknForth;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moverArrowBacknForth {
+    0%   {left:5px; color: #38d1ef;}
+    25%  {left:-5px; color: white}
+    50%  {left:5px; color: #38d1ef;}
+    75%  {left:-5px; color: white;}
+    100% {left:5px; color: #38d1ef;}
+}
+
+
+
+
+
+
+
+/* Home Right */
+
+.home_right {
+    margin-top: 50px;
+    margin-bottom: 60px;
+/*    border: 1px solid red;*/
+}
+
+/*.img_width_limiter {
+    border: 1px solid blue;
+}*/
+.home_right img {
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+#section_about {
+    padding-top: 100px;
+
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.s_about_contents {
+    width: 90%;
+}
+
+#section_about h1 {
+    font-family: "Montserrat";
+    color: #38d1ef;
+}
+
+#section_about .s_a_details {
+    list-style-type: square;
+    margin-left: 22px;
+}
+
+#section_about .s_a_details li {
+    font-family: "Prompt";
+    font-size: 18px;
+}
+
+
+/* Scroll Animation - about */
+.hideme {
+    opacity: 0;
+
+    transform: translateX(-100%);
+
+    transition: all 1s ease;
+}
+
+.showme {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#section_skills {
+    padding-top: 80px;
+}
+
+.s_skills_contents {
+    width: 80%;
+    transition: all .5s ease;
+}
+
+#section_skills h1 {
+/*    font-family: "Montserrat";*/
+    font-family: "KanitMedium";
+    font-size: 60px;
+    color: #38d1ef;
+}
+
+.s_skills_contents p {
+    font-family: "Kanit";
+    font-size: 18px;
+}
+
+.skill-items i {
+    font-size: 70px;
+}
+.skill-items img { /* svg */
+    height: 70px;
+}
+
+.skills_label {
+    margin-top: 10px;
+}
+
+
+/* Scroll Animation - Skills */
+.hideme_skills {
+    opacity: 0;
+
+    transform: translateX(-100%);
+
+    transition: all 1s ease;
+}
+
+.showme_skills {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#section_exp {
+    padding-top: 100px;
+}
+
+#section_exp h1 {
+    font-family: "KanitMedium";
+    font-size: 60px;
+    color: #38d1ef;
+}
+
+.exp_container {
+    padding: 10px;
+}
+.exp_items {
+    padding: 10px;
+    display: flex;
+}
+
+.exp_date {
+    min-width: 200px; 
+    color: #9B9B9B;
+    font-family: "Kanit";
+
+}
+
+.exp_items span {
+    font-family: "Kanit";
+    font-size: 20px;
+    color: #38d1ef;
+}
+
+.exp_company {
+    color: #9B9B9B;
+    font-family: "Kanit";
+    font-size: 18px;
+}
+
+.exp_company br {
+    display: none;
+}
+
+.exp_items i {
+    color: #9B9B9B;
+    font-family: "Kanit";
+}
+
+.exp_items p {
+    font-family: "Kanit";
+    color: #D8D8D8;
+    word-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#section_work {
+    padding-top: 100px;
+}
+
+#section_work h1 {
+    font-family: "KanitMedium";
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #38d1ef;
+}
+
+#section_work h5 {
+    font-family: "Kanit";
+    color: #9B9B9B;
+}
+
+#section_work p {
+    font-family: "Kanit";
+    color: #D8D8D8;
+    word-spacing: 2px;
+    font-size: 18px;
+}
+
+#section_work small {
+    color: #38d1ef;
+    word-spacing: 10px;
+    font-family: arial;
+}
+
+.work_img {
+    border: 2px solid #38d1ef;
+    padding: 5px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.work_thumbnail {
+    border-radius: 5px;
+    border: 1px solid #38d1ef;
+    width: 100%;
+}
+
+.work_img_action {
+    margin-top: 10px;
+    font-family: arial;
+    cursor: pointer;
+    border: 1px solid #141414;
+    border-radius: 3px;
+    padding: 2px;
+    width: fit-content;
+}
+.work_img_action:hover {
+    border-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#section_contacts {
+    padding-top: 100px;
+}
+
+/*#section_contacts h1 {
+    font-family: "KanitMedium";
+    font-size: 60px;
+    color: #38d1ef;
+}*/
+
+.my_quotes {
+    font-family: "Kanit";
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.mySocial {
+    font-size: 35px;
+    margin-top: 10px;
+}
+.mySocial a {
+    text-decoration: none;
+}
+
+address {
+    font-family: "Kanit";
+}
+address a {
+    font-family: "Kanit";
+}
+
+.bring_down_name {
+    display: none;
+}
+
+.createdBy_msg {
+    color: white;
+    font-size: 18px;
+    font-family: "Kanit";
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 466px) {
+    .bring_down_name {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* focus text */
+.focusText {
+    text-decoration: underline;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+/* *******************************************************************************************
+ * 
+ * Grid
+ * 
+ * *******************************************************************************************/
+
+.grid_container_skills {
+    display: grid;
+    /* justify-content: space-evenly; */
+    grid-template-columns: auto auto auto auto auto auto;
+    
+    padding: 10px;
+    gap: 5px;
+}
+.grid_item_skills {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+/* Grid - Skills contents */
+@media only screen and (max-width: 800px) {
+    .grid_container_skills {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .grid_container_skills {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1334px) {
+    .home_left p br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1294px) {
+    .home_left h1 {
+        font-size: 58px;
+    }
+}
+
+@media only screen and (max-width: 1264px) {
+    .home_left h1 {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (max-width: 1192px) {
+    .home_left h1 {
+        font-size: 53px;
+    }
+}
+
+@media only screen and (max-width: 1155px) {
+    .home_left h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 1094px) {
+    .home_left h1 {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 1054px) {
+    .home_left h1 {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    .home_left h1 {
+        font-size: 43px;
+    }
+}
+
+@media only screen and (max-width: 971px) {
+    .home_left h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 897px) {
+
+    .home_left {
+        margin-left: 20px;
+    }
+
+    .home_left h1 {
+        font-size: 35px;
+    }
+
+
+
+    .s_skills_contents {
+        width: 100%;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 440px) {
+    /* on Experience - date display block */
+    .exp_items {
+        display: block;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 385px) {
+    .exp_company br {
+        display: block;
+    }
+}
+
+
+
+
