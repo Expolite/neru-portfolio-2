@@ -252,14 +252,14 @@ nav {
 .hideme {
     opacity: 0;
 
-    transform: translateX(-100%);
+    /* transform: translateX(-100%); */
 
     transition: all 1s ease;
 }
 
 .showme {
     opacity: 1;
-    transform: translateX(0);
+    /* transform: translateX(0); */
 }
 
 
