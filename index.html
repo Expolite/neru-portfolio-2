@@ -2,11 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <meta name="description" content="This website is made for portfolio to share skills and experience that will great help and contribute to the company and works.">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, FontAwesome">
-    <meta name="author" content="Ronnel Macompas">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neru</title>
     <!-- Tab Icon -->
@@ -535,7 +530,7 @@
                     <div class="work_img">
                         <img src="assets/img/login_with_validation.png" class="work_thumbnail" alt="work_thumbnail">
                         <div class="work_img_action">
-                            <a href="assets/vid/vid_01.mp4" target="_blank" style="text-decoration: none; color: white;">
+                            <a href="#" data-toggle="modal" data-target="#loginValidationModal" target="_blank" style="text-decoration: none; color: white;">
                                 View Video Demo 
                                 <img src="assets/img/svg/arrowUpRight.svg" height="18" style="border: none; padding-bottom: 5px;" alt="squareBox-UpperRight">
                             </a>
@@ -566,7 +561,7 @@
                     <div class="work_img">
                         <img src="assets/img/crud_system.png" class="work_thumbnail" alt="work_thumbnail">
                         <div class="work_img_action">
-                            <a href="assets/vid/vid_02.mp4" target="_blank" style="text-decoration: none; color: white;">
+                            <a href="#" data-toggle="modal" data-target="#crudSystemModal" target="_blank" style="text-decoration: none; color: white;">
                                 View Video Demo 
                                 <img src="assets/img/svg/arrowUpRight.svg" height="18" style="border: none; padding-bottom: 5px;" alt="squareBox-UpperRight">
                             </a>
@@ -590,6 +585,62 @@
 
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+    <!-- MODAL -->
+
+    <!-- Login Validation - modal -->
+    <div class="modal fade text-light" id="loginValidationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content" style="background-color: #141414;">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color: #38d1ef;" id="exampleModalLabel">Login Validation</h5>
+                    <button type="button" class="close" style="color: white;" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div align="center" class="modal-body">
+                    <video height="350" controls>
+                        <source src="assets/vid/vid_01.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Crud System - modal -->
+    <div class="modal fade text-light" id="crudSystemModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content" style="background-color: #141414;">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color: #38d1ef;" id="exampleModalLabel">Login Validation</h5>
+                    <button type="button" class="close" style="color: white;" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div align="center" class="modal-body">
+                    <video height="350" controls>
+                        <source src="assets/vid/vid_02.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // MODAL -->
 
 
 
